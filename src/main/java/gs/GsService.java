@@ -3,11 +3,11 @@ package gs;
 import java.util.List;
 
 public interface GsService {
-    public void insertGs(GsVO vo);
-    public void updateGs(GsVO vo);
-    public void deleteGs(GsVO vo);
-    public GsVO getGs(GsVO vo);
-    public List<GsVO> getGsList(GsVO vo);
+    public int insertItem(GsVO vo);
+    public int updateItem(GsVO vo);
+    public int deleteItem(int itemId);
+    public GsVO getItem(int itemId);
+    public List<GsVO> getItems(GsVO vo);
     public void addOneplusone(GsVO vo);
     public void getPriceLimit(GsVO vo);
     public void getExpirationDate(GsVO vo);
